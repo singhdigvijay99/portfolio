@@ -1,4 +1,4 @@
-# portfolio🌐 Digvijay Singh's Portfolio
+#🌐 Digvijay Singh's Portfolio
 
 Personal portfolio showcasing projects, skills, and professional experience. Built with HTML, CSS, JavaScript, fully responsive and SEO-friendly.
 
