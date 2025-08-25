@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Digvijay Singh</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top rounded-navbar"
+    style="background: linear-gradient(33deg, rgba(222, 222, 255, 1) 0%, rgb(7, 131, 214) 100%);
+    border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Digvijay Singh
+          </a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Skills</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            
+            
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">  <a href="#contact" style="color: #fff; text-decoration: none;">Contact</a></button>
+        
+
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    
+    <!-- home section start  here -->
+
+<section class="home pt-5 pb-0 position-relative" id="home">
+  <!-- Watermark -->
+  <div class="watermark">Wordpress Developer</div>
+
+  <div class="row justify-content-evenly align-items-center position-relative" style="z-index: 1;">
+    
+    <!-- LEFT SIDE: TEXT -->
+    <div class="col-10 col-md-6 text-center text-md-start" data-aos="fade-right">
+      <h2>
+        Hello! I am <br /><span class="c-orange">Digvijay Singh</span>
+      </h2>
+      <p>
+        I'm a WordPress Developer with 4.5 years of experience in <b>designing, developing, and maintaining dynamic websites and web applications</b>. Skilled in WordPress theme and plugin development, PHP, MySQL, HTML, CSS, JavaScript, and SEO optimization.
+      </p>
+      <p>
+       Experienced in creating responsive, user-friendly, and performance-driven websites with a focus on automation, scalability, and seamless user experience. Passionate about building innovative digital solutions, integrating AI-powered tools, and solving real-world business challenges through WordPress.
+      </p>
+
+      <!-- Buttons: LinkedIn, Gmail, GitHub -->
+      <div class="d-flex gap-3 flex-wrap mt-3 mb-3">
+        <a href="http://linkedin.com/in/digvijay~singh" target="_blank" class="c-btn h-btn py-2 px-4 rounded-pill" style="text-decoration: none; color: #fff;">
+          <i class="bi bi-linkedin me-2"></i> LinkedIn
+        </a>
+        <a href="mailto:digvijay.digvijay1998@gmail.com" class="c-btn h-btn py-2 px-4 rounded-pill" style="text-decoration: none; color: #fff;">
+          <i class="bi bi-envelope-fill me-2"></i> Gmail
+        </a>
+        <a href="http://github.com/singhdigvijay99" target="_blank" class="c-btn h-btn py-2 px-4 rounded-pill" style="text-decoration: none; color: #fff;">
+          <i class="bi bi-github me-2"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: PHOTO -->
+    <div class="col-10 col-md-4 text-center" data-aos="fade-left">
+      <img src="images/digvijaysingh.jpg" class="img-fluid" alt="Profile Image" style="max-height: 400px;" />
+    </div>
+    
+  </div>
+</section>
+
+
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service" style="scroll-margin-top: 100px;">
+      <div class="heading text-center">
+        <h3>What I Do</h3>
+        <small>
+          Crafting Scalable WordPress Websites <br />
+          and Smart Digital Solutions 
+        </small>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Custom WordPress Development</h4>
+              <p class="text-muted">
+               Designing, developing, and customizing responsive, SEO-friendly, and performance-optimized websites using WordPress themes and plugins—tailored to meet unique business needs and deliver seamless user experiences.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>E-Commerce & Integrations</h4>
+              <p class="text-muted">
+                Building custom WooCommerce stores, seamless third-party plugin integrations, and intelligent automation solutions to streamline business workflows, boost online sales, and deliver scalable WordPress eCommerce experiences.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>AI & Automation in WordPress</h4>
+              <p class="text-muted">
+               Leveraging AI-powered tools, Python scripts, and WordPress automation to streamline workflows, optimize website content, enhance SEO performance, and build smarter, data-driven websites that deliver measurable results.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- experience section starts -->
+<section class="experience py-5" id="experience">
+  <div class="heading text-center">
+    <h3>Experience</h3>
+    <small>Professional Journey</small>
+  </div>
+  <div class="container" data-aos="fade-right">
+      <h4 class="fw-bold" style="color: #3f396d;">Software Engineer (WordPress Developer)</h4>
+      <h5 class="text-muted">Rubico IT Private Limited, Haridwar</h5>
+      <p class="text-muted mb-1">Feb 2021 – Present</p>
+      <p>
+        ● Developed and customized responsive, SEO-friendly WordPress websites.<br/>
+        ● Delivered client-focused solutions with WooCommerce, APIs, and integrations.<br/>
+        ● Optimized site performance, scalability, and user experience.<br/>
+        ● Automated tasks using AI-powered tools and Python scripts.<br/>
+        ● Ensured smooth project delivery through testing, debugging, and collaboration.
+      </p>
+  </div>
+    <!-- Data Science Internship -->
+  <div class="container" data-aos="fade-right">
+    <h4 class="fw-bold" style="color: #3f396d;">Data Science Intern</h4>
+    <h5 class="text-muted">RWX Technology, Haridwar</h5>
+    <p class="text-muted mb-1">Jun 2020 – Jul 2020</p>
+    <p>
+      ● Supported AI/ML projects using Python, Flask, and data libraries.<br/>
+      ● Built small-scale data solutions with NumPy, Pandas, and OpenCV.<br/>
+      ● Gained practical exposure to model development and deployment.
+    </p>
+  </div>
+
+  <!-- Machine Learning Internship -->
+  <div class="container" data-aos="fade-right">
+    <h4 class="fw-bold" style="color: #3f396d;">Machine Learning Intern</h4>
+    <h5 class="text-muted">Diginique TechLabs</h5>
+    <p class="text-muted mb-1">Jun 2019 – Jul 2019</p>
+    <p>
+      ● Worked on ML and deep learning projects using Python.<br/>
+      ● Created models with OpenCV and TensorFlow for image recognition tasks.<br/>
+      ● Strengthened foundation in AI and computer vision.
+    </p>
+  </div>
+
+  
+</section>
+<!-- experience section ends -->
+
+
+    <!-- skill section starts -->
+<section class="skill pt-5" id="about">
+
+  <style>
+    .skill-box {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    .skill-box:hover {
+      background-color: #3f396d;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .skill-text {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+  </style>
+  <div class="row justify-content-evenly align-items-center flex-row-reverse">
+    <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-left">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fab fa-wordpress skill-icon"></i> <span class="skill-text">WordPress Development</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-paint-brush skill-icon"></i> <span class="skill-text">Custom Theme Development</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-plug skill-icon"></i> <span class="skill-text">Plugin Development</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-shopping-cart skill-icon"></i> <span class="skill-text">WooCommerce</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-cogs skill-icon"></i> <span class="skill-text">ACF (Advanced Custom Fields)</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-link skill-icon"></i> <span class="skill-text">REST API Integrations</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-search skill-icon"></i> <span class="skill-text">SEO Optimization</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-database skill-icon"></i> <span class="skill-text">PHP & MySQL</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fab fa-python skill-icon"></i> <span class="skill-text">Python</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-chart-line skill-icon"></i> <span class="skill-text">Figma, Canva</span>
+        </div>
+        <div class="col-10 col-md-5 skill-box">
+          <i class="fas fa-pencil-ruler skill-icon"></i> <span class="skill-text">Data Analytics (Pandas, NumPy, Excel, Matplotlib)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-10 col-md-5 skill-detail" data-aos="slide-right">
+      <div class="heading mt-5 mt-md-3">
+        <h3>My Skills</h3>
+        <small>Core WordPress Development</small>
+        <p class="text-muted">
+          Experienced in WordPress, PHP, MySQL, JavaScript, WooCommerce, and Custom Theme Development for building scalable, responsive, and SEO-friendly websites. Skilled in Advanced Custom Fields (ACF), REST API integrations, and plugin customization to deliver tailored client solutions.
+        </p>
+        <small>Python & Data Analytics</small>
+        <p class="text-muted">
+           Have good knowledge of Python with practical exposure from internships and projects. Currently learning Data Analytics using Pandas, NumPy, Excel, and Matplotlib, with growing interest in applying data insights to digital solutions.
+        </p>
+        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" style="margin-bottom: 20px;">
+          <a
+            href="resume.pdf"
+            download="Digvijay_Singh_Resume"
+            style="text-decoration: none; color: #fff;"
+            >Download CV</a
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- skill section end here -->
+
+
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio" style="scroll-margin-top: 100px;">
+
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="python">Python</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 website col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/peterson.png" class="card-img-top" alt="Peterson Lights & Harnesses" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Peterson Lights & Harnesses</h4>
+                <p class="card-text">Migrated site to a modern infrastructure with minimal downtime. Built on a <strong>custom WordPress theme</strong> with SEO optimization and improved performance.</p>
+                <span class="badge bg-secondary">Custom Theme</span>
+                <span class="badge bg-secondary">WooCommerce</span>
+                <span class="badge bg-secondary">Gravity Form Customization</span>
+                <span class="badge bg-secondary">SEO</span><br />
+                <a href="https://petersonlightsandharnesses.com/" target="_blank" class="read-more-btn link">Visit Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/thursdaypools.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Thursday Pools</h4>
+                <p class="card-text">  Developed with a <strong>custom WordPress theme</strong>, including a 
+                <strong>custom pool calculator</strong>, dynamic templates, and performance optimizations. 
+                Built to be scalable, responsive, and SEO-friendly.</p>
+                <span class="badge bg-secondary badge-pill">Wordpress</span>
+                <span class="badge bg-secondary badge-pill">Dynamic Templates</span>
+                <span class="badge bg-secondary badge-pill">Custom Calculator</span>
+                <span class="badge bg-secondary badge-pill">Hubspot</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+                <a href="https://thursdaypools.com/" target="_blank" class="read-more-btn link">Visit Website</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="post col-md-4 website col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="./images/rpm.png" class="card-img-top" alt="RPM Real Estate CR" />
+              <div class="card-body text-center">
+                <h4 class="card-title">RPM Real Estate CR</h4>
+                <p class="card-text">
+                  Real estate booking platform developed with <strong>Elementor, paid theme & plugins</strong>, 
+                  with extensive <strong>plugin customization</strong> to fit client needs. 
+                  Includes a <strong>property booking application</strong> with role-based access for agents, admins, and clients.
+                </p>
+                <span class="badge bg-secondary">Elementor</span>
+                <span class="badge bg-secondary">Paid Theme</span>
+                <span class="badge bg-secondary">Plugin Customization</span>
+                <span class="badge bg-secondary">Property Booking</span><br />
+                <a href="https://rpmrealestatecr.com/" target="_blank" class="read-more-btn link">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <!-- Snake Game -->
+          <div class="post col-md-4 game python col-10 mt-3 mt-md-0 mb-2" data-aos="fade-up">
+            <div class="card">
+              <img src="https://user-images.githubusercontent.com/760933/95654304-993aa000-0ad5-11eb-8bc7-b7bc9820eb5e.gif" class="card-img-top" alt="Snake Game Screenshot" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Snake Game</h4>
+                <p class="card-text">
+                  Classic Snake Game developed using Python, Pygame, and OOP concepts. Maneuver the snake to eat fruit—game ends if it hits itself or the border.
+                </p>
+                <span class="badge bg-secondary">Python</span>
+                <span class="badge bg-secondary">Pygame</span>
+                <span class="badge bg-secondary">OOP</span><br />
+                <a href="https://github.com/singhdigvijay99/SnakegamePython/" target="_blank" class="read-more-btn link">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Face Mask Detection -->
+          <div class="post col-md-4 python col-10 mt-3 mt-md-0 mb-2" data-aos="fade-up">
+            <div class="card">
+              <img src="./images/face-mask-detection.png" class="card-img-top" alt="Face Mask Detection Screenshot" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Face Mask Detection</h4>
+                <p class="card-text">
+                  Python-powered face mask detection using ML and MobileNetV2, designed for mobile compatibility. Detects whether a person is wearing a mask or not.
+                </p>
+                <span class="badge bg-secondary">Python</span>
+                <span class="badge bg-secondary">Machine Learning</span>
+                <span class="badge bg-secondary">MobileNetV2</span><br />
+                <a href="https://github.com/singhdigvijay99/face-mask-detection" target="_blank" class="read-more-btn link">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Dehradun,Uttarakhand, India</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p><a href="tel:7454940118">+91-7454940118</a></p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p><a href="mailto:digvijay.digvijay1998@gmail.com">digvijay.digvijay1998@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p><a href="https://vikassurya.github.io/vikas-portfolio/" class="link">Website</a></p>
+            </div>
+          </div>
+        </div>
+      
+  
+    <!-- contact section ends here -->
+
+  
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4" style="background-color: #f8f9fa;">
+      <p>Copyright 2025 Digvijay Singh | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
