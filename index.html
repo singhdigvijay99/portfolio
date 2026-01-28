@@ -1,551 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Digvijay Singh</title>
-
-    <!-- bootstrap css cdn link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digvijay Singh - WordPress Developer & Digital Innovator</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- bootstrap icon cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
-
-
     
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
 
-    <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Floating Particles -->
+    <div id="particles-container"></div>
 
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- navbar starts -->
-    <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top rounded-navbar"
-    style="background: linear-gradient(33deg, rgba(222, 222, 255, 1) 0%, rgb(7, 131, 214) 100%);
-    border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Digvijay Singh
-          </a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            
-            
-          </ul>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Digvijay</span>
+                <span class="logo-dot"></span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">  <a href="#contact" style="color: #fff; text-decoration: none;">Contact</a></button>
-        
-
-      </div>
     </nav>
-    <!-- navbar ends here -->
 
-    
-    <!-- home section start  here -->
-
-<section class="home pt-5 pb-0 position-relative" id="home">
-  <!-- Watermark -->
-  <div class="watermark">Wordpress Developer</div>
-
-  <div class="row justify-content-evenly align-items-center position-relative" style="z-index: 1;">
-    
-    <!-- LEFT SIDE: TEXT -->
-    <div class="col-10 col-md-6 text-center text-md-start" data-aos="fade-right">
-      <h2>
-        Hello! I am <br /><span class="c-orange">Digvijay Singh</span>
-      </h2>
-      <p>
-        I'm a WordPress Developer with 4+ years of experience in <b>designing, developing, and maintaining dynamic websites and web applications</b>. Skilled in WordPress theme and plugin development, PHP, MySQL, HTML, CSS, JavaScript, and SEO optimization.
-      </p>
-      <p>
-       Experienced in creating responsive, user-friendly, and performance-driven websites with a focus on automation, scalability, and seamless user experience. Passionate about building innovative digital solutions, integrating AI-powered tools, and solving real-world business challenges through WordPress.
-      </p>
-
-      <!-- Buttons: LinkedIn, Gmail, GitHub -->
-      <div class="d-flex gap-3 flex-wrap mt-3 mb-3">
-        <a href="http://linkedin.com/in/digvijay~singh" target="_blank" class="c-btn h-btn py-2 px-4 rounded-pill" style="text-decoration: none; color: #fff;">
-          <i class="bi bi-linkedin me-2"></i> LinkedIn
-        </a>
-        <a href="mailto:digvijay.digvijay1998@gmail.com" class="c-btn h-btn py-2 px-4 rounded-pill" style="text-decoration: none; color: #fff;">
-          <i class="bi bi-envelope-fill me-2"></i> Gmail
-        </a>
-        <a href="http://github.com/singhdigvijay99" target="_blank" class="c-btn h-btn py-2 px-4 rounded-pill" style="text-decoration: none; color: #fff;">
-          <i class="bi bi-github me-2"></i> GitHub
-        </a>
-      </div>
-    </div>
-
-    <!-- RIGHT SIDE: PHOTO -->
-    <div class="col-10 col-md-4 text-center" data-aos="fade-left">
-      <img src="images/digvijaysingh.jpg" class="img-fluid" alt="Profile Image" style="max-height: 400px;" />
-    </div>
-    
-  </div>
-</section>
-
-
-    <!-- home section ends here -->
-
-    <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service" style="scroll-margin-top: 100px;">
-      <div class="heading text-center">
-        <h3>What I Do</h3>
-        <small>
-          Crafting Scalable WordPress Websites <br />
-          and Smart Digital Solutions 
-        </small>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Open to Work</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-line gradient-text">Digvijay Singh</span>
+                    </h1>
+                    <p class="hero-subtitle">Software Engineer & WordPress Developer</p>
+                    <p class="hero-description">
+                        Software Engineer with 4+ years of experience delivering scalable, high-performance web solutions. 
+                        Skilled in WordPress, Plugin Development, PHP, REST APIs, and Webhooks, with a proven ability to 
+                        lead development end-to-end, optimize performance, and drive client satisfaction while collaborating 
+                        seamlessly with cross-functional teams.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="http://linkedin.com/in/digvijay~singh" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="http://github.com/singhdigvijay99" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:digvijay.digvijay1998@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card card-3d">
+                        <div class="card-glow"></div>
+                        <img src="images/digvijaysingh.jpg" alt="Digvijay Singh" class="profile-image">
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Years Exp</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content mt-3">
-              <h4>Custom WordPress Development</h4>
-              <p class="text-muted">
-               Designing, developing, and customizing responsive, SEO-friendly, and performance-optimized websites using WordPress themes and plugins—tailored to meet unique business needs and deliver seamless user experiences.
-              </p>
-              <a href="" class="link">Read More</a>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>E-Commerce & Integrations</h4>
-              <p class="text-muted">
-                Building custom WooCommerce stores, seamless third-party plugin integrations, and intelligent automation solutions to streamline business workflows, boost online sales, and deliver scalable WordPress eCommerce experiences.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon3.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>AI & Automation in WordPress</h4>
-              <p class="text-muted">
-               Leveraging AI-powered tools, Python scripts, and WordPress automation to streamline workflows, optimize website content, enhance SEO performance, and build smarter, data-driven websites that deliver measurable results.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- expertise section ends here -->
 
-    <!-- experience section starts -->
-<section class="experience py-5" id="experience">
-  <div class="heading text-center">
-    <h3>Experience</h3>
-    <small>Professional Journey</small>
-  </div>
-  <div class="container" data-aos="fade-right">
-      <h4 class="fw-bold" style="color: #3f396d;">Software Engineer (WordPress Developer)</h4>
-      <h5 class="text-muted">Rubico IT Private Limited, Haridwar</h5>
-      <p class="text-muted mb-1">Feb 2021 – Oct 2025</p>
-      <p>
-        ● Developed and customized responsive, SEO-friendly WordPress websites.<br/>
-        ● Delivered client-focused solutions with WooCommerce, APIs, and integrations.<br/>
-        ● Optimized site performance, scalability, and user experience.<br/>
-        ● Automated tasks using AI-powered tools and Python scripts.<br/>
-        ● Ensured smooth project delivery through testing, debugging, and collaboration.
-      </p>
-  </div>
-    <!-- Data Science Internship -->
-  <div class="container" data-aos="fade-right">
-    <h4 class="fw-bold" style="color: #3f396d;">Data Science Intern</h4>
-    <h5 class="text-muted">RWX Technology, Haridwar</h5>
-    <p class="text-muted mb-1">Jun 2020 – Jul 2020</p>
-    <p>
-      ● Supported AI/ML projects using Python, Flask, and data libraries.<br/>
-      ● Built small-scale data solutions with NumPy, Pandas, and OpenCV.<br/>
-      ● Gained practical exposure to model development and deployment.
-    </p>
-  </div>
-
-  <!-- Machine Learning Internship -->
-  <div class="container" data-aos="fade-right">
-    <h4 class="fw-bold" style="color: #3f396d;">Machine Learning Intern</h4>
-    <h5 class="text-muted">Diginique TechLabs</h5>
-    <p class="text-muted mb-1">Jun 2019 – Jul 2019</p>
-    <p>
-      ● Worked on ML and deep learning projects using Python.<br/>
-      ● Created models with OpenCV and TensorFlow for image recognition tasks.<br/>
-      ● Strengthened foundation in AI and computer vision.
-    </p>
-  </div>
-
-  
-</section>
-<!-- experience section ends -->
-
-
-    <!-- skill section starts -->
-<section class="skill pt-5" id="about">
-
-  <style>
-    .skill-box {
-      background-color: #f0f0f0;
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 20px;
-      transition: 0.3s ease-in-out;
-      cursor: pointer;
-    }
-    .skill-box:hover {
-      background-color: #3f396d;
-      color: #fff;
-      transform: scale(1.05);
-    }
-    .skill-text {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-  </style>
-  <div class="row justify-content-evenly align-items-center flex-row-reverse">
-    <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-left">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fab fa-wordpress skill-icon"></i> <span class="skill-text">WordPress Development</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-paint-brush skill-icon"></i> <span class="skill-text">Custom Theme Development</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-plug skill-icon"></i> <span class="skill-text">Plugin Development</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-shopping-cart skill-icon"></i> <span class="skill-text">WooCommerce</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-cogs skill-icon"></i> <span class="skill-text">ACF (Advanced Custom Fields)</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-link skill-icon"></i> <span class="skill-text">REST API Integrations</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-search skill-icon"></i> <span class="skill-text">SEO Optimization</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-database skill-icon"></i> <span class="skill-text">PHP & MySQL</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fab fa-python skill-icon"></i> <span class="skill-text">Python</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-chart-line skill-icon"></i> <span class="skill-text">Figma, Canva</span>
-        </div>
-        <div class="col-10 col-md-5 skill-box">
-          <i class="fas fa-pencil-ruler skill-icon"></i> <span class="skill-text">Data Analytics (Pandas, NumPy, Excel, Matplotlib)</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-10 col-md-5 skill-detail" data-aos="slide-right">
-      <div class="heading mt-5 mt-md-3">
-        <h3>My Skills</h3>
-        <small>Core WordPress Development</small>
-        <p class="text-muted">
-          Experienced in WordPress, PHP, MySQL, JavaScript, WooCommerce, and Custom Theme Development for building scalable, responsive, and SEO-friendly websites. Skilled in Advanced Custom Fields (ACF), REST API integrations, and plugin customization to deliver tailored client solutions.
-        </p>
-        <small>Python & Data Analytics</small>
-        <p class="text-muted">
-           Have good knowledge of Python with practical exposure from internships and projects. Currently learning Data Analytics using Pandas, NumPy, Excel, and Matplotlib, with growing interest in applying data insights to digital solutions.
-        </p>
-        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" style="margin-bottom: 20px;">
-          <a
-            href="resume.pdf"
-            download="Digvijay_Singh_Resume"
-            style="text-decoration: none; color: #fff;"
-            >Download CV</a
-          >
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- skill section end here -->
-
-
-
-    <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio" style="scroll-margin-top: 100px;">
-
-      <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
-      </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="game">Game</button>
-        <button class="filter-item" data-filter="website">Website</button>
-        <button class="filter-item" data-filter="python">Python</button>
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 website col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/peterson.png" class="card-img-top" alt="Peterson Lights & Harnesses" />
-              <div class="card-body text-center">
-                <h4 class="card-title">Peterson Lights & Harnesses</h4>
-                <p class="card-text">Migrated site to a modern infrastructure with minimal downtime. Built on a <strong>custom WordPress theme</strong> with SEO optimization and improved performance.</p>
-                <span class="badge bg-secondary">Custom Theme</span>
-                <span class="badge bg-secondary">WooCommerce</span>
-                <span class="badge bg-secondary">Gravity Form Customization</span>
-                <span class="badge bg-secondary">SEO</span><br />
-                <a href="https://petersonlightsandharnesses.com/" target="_blank" class="read-more-btn link">Visit Website</a>
-              </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Turning Ideas Into Reality</h2>
             </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/thursdaypools.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Thursday Pools</h4>
-                <p class="card-text">  Developed with a <strong>custom WordPress theme</strong>, including a 
-                <strong>custom pool calculator</strong>, dynamic templates, and performance optimizations. 
-                Built to be scalable, responsive, and SEO-friendly.</p>
-                <span class="badge bg-secondary badge-pill">Wordpress</span>
-                <span class="badge bg-secondary badge-pill">Dynamic Templates</span>
-                <span class="badge bg-secondary badge-pill">Custom Calculator</span>
-                <span class="badge bg-secondary badge-pill">Hubspot</span>
-                <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
-                <a href="https://thursdaypools.com/" target="_blank" class="read-more-btn link">Visit Website</a>
-              </div>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-card card-hover">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Clean Code</h3>
+                        <p>Writing maintainable, scalable, and well-documented code following industry best practices.</p>
+                    </div>
+                    <div class="about-card card-hover">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Fast Performance</h3>
+                        <p>Optimizing websites for lightning-fast load times and exceptional user experience.</p>
+                    </div>
+                    <div class="about-card card-hover">
+                        <div class="card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Creating pixel-perfect, mobile-first designs that work seamlessly across all devices.</p>
+                    </div>
+                    <div class="about-card card-hover">
+                        <div class="card-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Optimized</h3>
+                        <p>Implementing SEO best practices to improve visibility and organic search rankings.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="post col-md-4 website col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="./images/rpm.png" class="card-img-top" alt="RPM Real Estate CR" />
-              <div class="card-body text-center">
-                <h4 class="card-title">RPM Real Estate CR</h4>
-                <p class="card-text">
-                  Real estate booking platform developed with <strong>Elementor, paid theme & plugins</strong>, 
-                  with extensive <strong>plugin customization</strong> to fit client needs. 
-                  Includes a <strong>property booking application</strong> with role-based access for agents, admins, and clients.
-                </p>
-                <span class="badge bg-secondary">Elementor</span>
-                <span class="badge bg-secondary">Paid Theme</span>
-                <span class="badge bg-secondary">Plugin Customization</span>
-                <span class="badge bg-secondary">Property Booking</span><br />
-                <a href="https://rpmrealestatecr.com/" target="_blank" class="read-more-btn link">Visit Website</a>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <!-- Snake Game -->
-          <div class="post col-md-4 game python col-10 mt-3 mt-md-0 mb-2" data-aos="fade-up">
-            <div class="card">
-              <img src="./images/trustedleader.png" class="card-img-top" alt="Snake Game Screenshot" />
-              <div class="card-body text-center">
-                <h4 class="card-title">Zoom API integration and secure payment gateway</h4>
-                <p class="card-text">
-                  Online class management system developed with <strong>Zoom API integration</strong> 
-                  and a <strong>secure payment gateway</strong>. 
-                  Includes <strong>user registration, automated meeting creation</strong>, 
-                  and <strong>class detail management</strong> for a seamless experience.
-                </p>
-                <span class="badge bg-secondary">Wordpress</span>
-                <span class="badge bg-secondary">Zoom API</span>
-                <span class="badge bg-secondary">User Registration</span>
-                <span class="badge bg-secondary">Payment Gateway</span><br />
-                <a href="https://trustedleader360.com/certification/" target="_blank" class="read-more-btn link">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Snake Game -->
-          <div class="post col-md-4 game python col-10 mt-3 mt-md-0 mb-2" data-aos="fade-up">
-            <div class="card">
-              <img src="https://user-images.githubusercontent.com/760933/95654304-993aa000-0ad5-11eb-8bc7-b7bc9820eb5e.gif" class="card-img-top" alt="Snake Game Screenshot" />
-              <div class="card-body text-center">
-                <h4 class="card-title">Snake Game</h4>
-                <p class="card-text">
-                  Classic Snake Game developed using Python, Pygame, and OOP concepts. Maneuver the snake to eat fruit—game ends if it hits itself or the border.
-                </p>
-                <span class="badge bg-secondary">Python</span>
-                <span class="badge bg-secondary">Pygame</span>
-                <span class="badge bg-secondary">OOP</span><br />
-                <a href="https://github.com/singhdigvijay99/SnakegamePython/" target="_blank" class="read-more-btn link">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Face Mask Detection -->
-          <div class="post col-md-4 python col-10 mt-3 mt-md-0 mb-2" data-aos="fade-up">
-            <div class="card">
-              <img src="./images/face-mask-detection.png" class="card-img-top" alt="Face Mask Detection Screenshot" />
-              <div class="card-body text-center">
-                <h4 class="card-title">Face Mask Detection</h4>
-                <p class="card-text">
-                  Python-powered face mask detection using ML and MobileNetV2, designed for mobile compatibility. Detects whether a person is wearing a mask or not.
-                </p>
-                <span class="badge bg-secondary">Python</span>
-                <span class="badge bg-secondary">Machine Learning</span>
-                <span class="badge bg-secondary">MobileNetV2</span><br />
-                <a href="https://github.com/singhdigvijay99/face-mask-detection" target="_blank" class="read-more-btn link">View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     </section>
-    <!-- portfolio section ends here -->
 
-    <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Professional Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
             </div>
-            <div class="col-11">
-              <p>Dehradun,Uttarakhand, India</p>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2021 - Oct 2025</span>
+                        <h3>Software Engineer</h3>
+                        <h4>Rubico IT Private Limited | Dehradun</h4>
+                        <p>Designed, developed, and deployed robust applications while adhering to project timelines and industry-standard coding practices. Improved application performance by 20% and enhanced client satisfaction by 15%. Implemented comprehensive testing protocols, reducing defect rates by 25%.</p>
+                        <div class="timeline-tags">
+                            <span>WordPress</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>REST API</span>
+                            <span>Plugin Development</span>
+                            <span>Theme Development</span>
+                            <span>MySQL</span>
+                            <span>Woo-Commerece</span>
+                            <span>HubSpot API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun 2020 - Jul 2020</span>
+                        <h3>Data Science Intern</h3>
+                        <h4>RWX TECHNOLOGY | Haridwar</h4>
+                        <p>Contributed to machine learning and AI projects using Python. Improved model accuracy by 10% and automated data preprocessing tasks, reducing manual work by 40%. Developed expertise in Flask, NumPy, Pandas, Matplotlib, and OpenCV.</p>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>NumPy</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun 2019 - Jul 2019</span>
+                        <h3>Machine Learning Intern</h3>
+                        <h4>Diginique TechLabs | Noida</h4>
+                        <p>Worked on machine learning and deep learning algorithms, optimizing performance by 15%. Developed a real-time object detection model with 90% accuracy using OpenCV, TensorFlow, and Python.</p>
+                        <div class="timeline-tags">
+                            <span>OpenCV</span>
+                            <span>TensorFlow</span>
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2021</span>
+                        <h3>B.Tech in Computer Science Engineering</h3>
+                        <h4>College of Engineering Roorkee | Roorkee, Uttarakhand</h4>
+                        <p>Graduated with a Bachelor of Technology degree in Computer Science Engineering, building a strong foundation in software development, algorithms, and system design.</p>
+                        <div class="timeline-tags">
+                            <span>Computer Science</span>
+                            <span>Software Engineering</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p><a href="tel:7454940118">+91-7454940118</a></p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p><a href="mailto:digvijay.digvijay1998@gmail.com">digvijay.digvijay1998@gmail.com</a></p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-              <p><a href="https://singhdigvijay99.github.io/portfolio/" class="link">Website</a></p>
-            </div>
-          </div>
         </div>
-      
-  
-    <!-- contact section ends here -->
+    </section>
 
-  
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4" style="background-color: #f8f9fa;">
-      <p>Copyright 2025 Digvijay Singh | All Rights Reserved.</p>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Frontend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <i class="fab fa-wordpress"></i>
+                        WordPress & Tools
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">WordPress</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Plugin Development</span>
+                                <span class="skill-percentage">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Theme Development</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & AGILE</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="website">Websites</button>
+                <button class="filter-btn" data-filter="custom">Custom Development</button>
+                <button class="filter-btn" data-filter="python">Python Projects</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="website custom" data-aos="fade-up">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/ailoitte.png" alt="Ailoitte">
+                            <div class="portfolio-overlay">
+                                <a href="https://www.ailoitte.com/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span>WordPress</span>
+                                <span>Multisite Migration</span>
+                                <span>HubSpot API</span>
+                                <span>Performance</span>
+                            </div>
+                            <h3>Ailoitte</h3>
+                            <p>Successfully migrated from WordPress multisite to single site, integrated HubSpot API for form submissions, and achieved 90% speed improvement through comprehensive optimization following WordPress standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="website custom" data-aos="fade-up">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/peterson.png" alt="Peterson Lights & Harnesses">
+                            <div class="portfolio-overlay">
+                                <a href="https://petersonlightsandharnesses.com/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span>WordPress</span>
+                                <span>Custom Theme</span>
+                                <span>WooCommerce</span>
+                            </div>
+                            <h3>Peterson Lights & Harnesses</h3>
+                            <p>Custom WordPress theme with WooCommerce integration, SEO optimization, and improved performance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="website custom" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/thursdaypools.png" alt="Thursday Pools">
+                            <div class="portfolio-overlay">
+                                <a href="https://thursdaypools.com/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span>WordPress</span>
+                                <span>Custom Calculator</span>
+                                <span>HubSpot</span>
+                            </div>
+                            <h3>Thursday Pools</h3>
+                            <p>Custom theme with dynamic templates, custom pool calculator, and HubSpot integration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="website" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/rpm.png" alt="RPM Real Estate CR">
+                            <div class="portfolio-overlay">
+                                <a href="https://rpmrealestatecr.com/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span>Elementor</span>
+                                <span>Booking System</span>
+                                <span>Plugin Custom</span>
+                            </div>
+                            <h3>RPM Real Estate CR</h3>
+                            <p>Property booking platform with role-based access and extensive plugin customization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="custom" data-aos="fade-up">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/trustedleader.png" alt="Trusted Leader">
+                            <div class="portfolio-overlay">
+                                <a href="https://trustedleader360.com/certification/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span>Zoom API</span>
+                                <span>Payment Gateway</span>
+                                <span>Registration</span>
+                            </div>
+                            <h3>Online Class Management</h3>
+                            <p>Zoom API integration with automated meeting creation and secure payment processing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="python" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://user-images.githubusercontent.com/760933/95654304-993aa000-0ad5-11eb-8bc7-b7bc9820eb5e.gif" alt="Snake Game">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/singhdigvijay99/SnakegamePython/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span>Python</span>
+                                <span>Pygame</span>
+                                <span>OOP</span>
+                            </div>
+                            <h3>Snake Game</h3>
+                            <p>Classic Snake Game built with Python, Pygame, and object-oriented programming concepts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-item" data-category="python" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/face-mask-detection.png" alt="Face Mask Detection">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/singhdigvijay99/face-mask-detection" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>MobileNetV2</span>
+                            </div>
+                            <h3>Face Mask Detection</h3>
+                            <p>ML-powered face mask detection using MobileNetV2 for mobile compatibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card" data-aos="fade-up">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Dehradun, Uttarakhand, India</p>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:7454940118">+91-7454940118</a></p>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:digvijay.digvijay1998@gmail.com">digvijay.digvijay1998@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-cta" data-aos="fade-up">
+                    <h3>Ready to start a project?</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:digvijay.digvijay1998@gmail.com" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                        <a href="/Wordpress Resume  - Digvijay Singh.pdf" target="_blank" class="btn btn-outline">
+                            <span>View Resume</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Digvijay Singh</span>
+                </div>
+                <div class="footer-social">
+                    <a href="http://linkedin.com/in/digvijay~singh" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="http://github.com/singhdigvijay99" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:digvijay.digvijay1998@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="footer-text">© 2025 Digvijay Singh. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-    <!-- footer section ends here -->
 
-      <!-- bootstrap javascript cdn link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- AOS library javascript link  -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      // initializing AOS library
-      AOS.init({
-        duration: 1000,
-        offset: 50,
-      });
-    </script>
-    <!-- custom js file linking -->
     <script src="js/script.js"></script>
-    
-  </body>
+</body>
 </html>
