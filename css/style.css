@@ -1433,3 +1433,10 @@ input, textarea, select, [role="button"], .nav-link {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+
+.portfolio-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
